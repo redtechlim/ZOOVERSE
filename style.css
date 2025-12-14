@@ -20,6 +20,11 @@
       display: block;
     }
 
+    /* Barre décorative */
+.separator {
+  width: 100%;
+  border-top: 5px solid #088400ff; 
+}
 
 
     /* Boutons alignés et espacés */
