@@ -1,0 +1,116 @@
+
+    body {
+  background-color: #f7f3f3;
+  color: #141414;
+    }
+
+    a {
+  text-decoration: none;
+  color: inherit;
+}
+
+    
+    .card {
+      height: auto;
+      min-height: 0;
+    }
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+
+    /* Boutons alignés et espacés */
+    .bouton {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+/* Boutons en version mobile avec @media (600px) */
+@media (max-width: 600px) {
+  .bouton {
+    flex-direction: column;
+  }
+}
+
+
+    /* Texte centré dans la présentation */
+    .presentation p {
+      text-align: center;
+    }
+
+    /* Google Font Titres */
+
+    
+h1 {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+  
+}
+
+h5 {
+  font-family: "Kablammo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+  font-size: 2rem;
+}
+
+.logo-text {
+  font-family: "Kablammo", system-ui;
+  font-size: 2rem;      /* taille du texte */
+  color: #088400ff;       /* couleur du texte */
+}
+
+/* ANIMATIONS */
+
+
+/* Animations logo navbar*/
+.logo-img {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.2) rotate(8deg);
+}
+
+
+
+
+/* Animations cartes*/
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-10px) translateX(5px); /* décalage */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* ombre */
+}
+
+/* Ombre plus foncée pour la carte active */
+.card.darker {
+ box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  transition: none; /* pas d’animation */
+   transform: rotate(2deg);
+}
+
+/* Désactiver le hover pour la carte active */
+.card.darker:hover {
+  transform: rotate(2deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8); /* reste la même ombre */
+}
+
+/* JEU.HTML */
+
+.h1-jeu{
+    margin-bottom: 200px;
+}
