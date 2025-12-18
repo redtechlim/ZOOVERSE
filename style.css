@@ -1,7 +1,18 @@
 
+
+.navbar .nav-link {
+  background-color: #f8f9f7 !important;
+  font-weight: 700;   
+  color: #808080;
+}
+
+.navbar .nav-link:hover {
+  color: #088400ff;  
+}
+    
     body {
-  background-color: #f7f3f3;
-  color: #141414;
+  background-color: #e6f0ea   ;
+  color: #1a1a1a;
     }
 
     a {
@@ -13,6 +24,7 @@
     .card {
       height: auto;
       min-height: 0;
+      background-color: #f8f9f7;
     }
     .card-img-top {
       width: 100%;
@@ -40,6 +52,10 @@
 @media (max-width: 600px) {
   .bouton {
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1,5rem;
   }
 }
 
