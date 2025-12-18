@@ -54,8 +54,8 @@
     flex-direction: column;
   }
 
-  h1 {
-    font-size: 1,5rem;
+  .h1-regles {
+    font-size: 1.2rem;
   }
 }
 
